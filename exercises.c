@@ -48,6 +48,8 @@ Ejercicio 3: Filtrar Números Pares
 Descripción: Escribe una función que tome un arreglo de enteros
 y su tamaño, y luego devuelva un nuevo arreglo que contenga solo
 los números pares del arreglo original.
+newsize aputa a una direccion validia que no ha sido inicializada con ningun valor especifico.
+*newsizedebe almacenar el tamano del nuevo arreglo que se retorna
 */
 int *filterEvenNumbers(int arr[], int size, int *newSize)
 {
@@ -70,8 +72,7 @@ int *filterEvenNumbers(int arr[], int size, int *newSize)
 /*
 Ejercicio 4: Fusión de dos Arreglos Ordenados
 Descripción: Escribe una función que tome dos arreglos
-ordenados y sus tamaños, y luego fusione estos dos
-arreglos en un tercer arreglo también ordenado.
+ordenados de menor a mayor y sus tamanos, y luego fusione estos dos arreglos en un tercer arreglo también ordenado de menor a mayor.
 */
 void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
                        int result[])
@@ -102,7 +103,33 @@ Descripción: Escribe una función que tome un arreglo y su tamaño,
 y luego devuelva 1 si el arreglo está ordenado en orden ascendente,
   0 si no está ordenado, y -1 si está ordenado en orden descendente.
 */
-int checkSorted(int arr[], int size) { return -2; }
+int checkSorted(int arr[], int size)
+{
+  int ascendente = 0;
+  int descendente = 0;
+  
+  for (int i = 0; i < size - 1; i++)
+  {
+     if (arr[i] < arr[i + 1])
+     {
+       ascendente++;
+     }
+    else if (arr[i] > arr[i + 1])
+    {
+      descendente++;
+    }
+  }
+
+  if (ascendente == size - 1)
+  {
+    return 1;
+  }
+  else if (descendente == size - 1 )
+  {
+    return -1;
+  }
+  else return 0;
+}
 
 /*
 Ejercicio 6: Información de una Biblioteca
