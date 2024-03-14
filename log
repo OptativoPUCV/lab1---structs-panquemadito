@@ -117,3 +117,9 @@ exercises.c:153:11: error: ‘libroo’ undeclared (first use in this function);
 exercises.c:153:11: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 2c3529a
+Thu 14 Mar 2024 04:32:46 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|1
+total_score: 60/70
+062bf69
