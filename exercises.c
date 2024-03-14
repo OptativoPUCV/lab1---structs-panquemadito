@@ -4,6 +4,7 @@
 #include <stdlib.h>
 #include <string.h>
 
+
 /*
 Ejercicio 1: Encuentra el Elemento Mayor
 Descripción: Escribe una función que tome un arreglo de enteros
@@ -146,7 +147,14 @@ typedef struct {
 } Libro;
 
 void inicializarLibro(Libro *libro, const char *titulo, const char *nombreAutor,
-                      int anioNacimiento, int anioPublicacion) {}
+                      int anioNacimiento, int anioPublicacion) 
+{
+  strcpy(libro->titulo, titulo) ;
+  strcpy (libroo -> autor.nombre, nombreAutor) ;
+  libro -> autor.anioNacimiento = anioNacimiento;
+
+  libro ->anioPublicacion = anioPublicacion;
+}
 
 /*
 Ejercicio 7: Lista enlazada de números

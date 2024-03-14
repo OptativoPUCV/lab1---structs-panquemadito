@@ -105,3 +105,15 @@ Thu 14 Mar 2024 04:17:13 PM UTC:
  1 file changed, 14 insertions(+), 5 deletions(-)
  tests:  0|0
 3795f67
+Thu 14 Mar 2024 04:32:39 PM UTC: 
+ exercises.c | 9 ++++++++-
+ 1 file changed, 8 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘inicializarLibro’:
+exercises.c:153:11: error: ‘libroo’ undeclared (first use in this function); did you mean ‘libro’?
+  153 |   strcpy (libroo -> autor.nombre, nombreAutor) ;
+      |           ^~~~~~
+      |           libro
+exercises.c:153:11: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+2c3529a
