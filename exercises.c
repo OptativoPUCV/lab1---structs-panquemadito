@@ -107,6 +107,8 @@ int checkSorted(int arr[], int size)
 {
   int ascendente = 0;
   int descendente = 0;
+  int noAscendente = 0;
+  int noDescendente = 0;
   
   for (int i = 0; i < size - 1; i++)
   {
@@ -114,23 +116,7 @@ int checkSorted(int arr[], int size)
      {
        ascendente++;
      }
-    else if (arr[i] > arr[i + 1])
-    {
-      descendente++;
-    }
-  }
-
-  if (ascendente == size - 1)
-  {
-    return 1;
-  }
-  else if (descendente == size - 1 )
-  {
-    return -1;
-  }
-  else return 0;
-}
-
+    
 /*
 Ejercicio 6: Información de una Biblioteca
 Descripción: Vamos a representar la información de una biblioteca. En la
