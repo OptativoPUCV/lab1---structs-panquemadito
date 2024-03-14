@@ -22,3 +22,9 @@ test.c:125:5: error: implicit declaration of function ‘reverseArray’; did yo
 cc1: all warnings being treated as errors
 Compilation failed
 a5a1244
+Thu 14 Mar 2024 01:13:22 AM UTC: 
+ exercises.c | 9 +++++----
+ 1 file changed, 5 insertions(+), 4 deletions(-)
+ tests:  0|5
+total_score: 20/70
+447014f
