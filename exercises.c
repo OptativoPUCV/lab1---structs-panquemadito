@@ -176,7 +176,7 @@ Nodo *crearListaEnlazada(int arr[], int size)
 {
   Nodo *cabeza = NULL, *temp = NULL, *nuevoNodo = NULL;
 
-  if (size = 0) return Null;
+  if (size = 0) return NULL;
 
   for (int i = 0; i < size; i++)
   {

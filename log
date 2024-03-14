@@ -154,3 +154,30 @@ exercises.c:177:25: error: unused variable ‘temp’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 827fe92
+Thu 14 Mar 2024 05:54:00 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:179:7: error: suggest parentheses around assignment used as truth value [-Werror=parentheses]
+  179 |   if (size = 0) return NULL;
+      |       ^~~~
+exercises.c:183:44: error: expected ‘)’ before ‘;’ token
+  183 |     nuevoNodo = (Nodo *)malloc(sizeof(Nodo);
+      |                               ~            ^
+      |                                            )
+exercises.c:197:6: error: expected ‘;’ before ‘}’ token
+  197 |     }
+      |      ^
+      |      ;
+  198 |   }
+      |   ~   
+exercises.c:177:39: error: variable ‘nuevoNodo’ set but not used [-Werror=unused-but-set-variable]
+  177 |   Nodo *cabeza = NULL, *temp = NULL, *nuevoNodo = NULL;
+      |                                       ^~~~~~~~~
+exercises.c:177:25: error: unused variable ‘temp’ [-Werror=unused-variable]
+  177 |   Nodo *cabeza = NULL, *temp = NULL, *nuevoNodo = NULL;
+      |                         ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+bfd5c20
