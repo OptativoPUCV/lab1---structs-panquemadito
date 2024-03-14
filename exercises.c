@@ -51,21 +51,21 @@ los números pares del arreglo original.
 */
 int *filterEvenNumbers(int arr[], int size, int *newSize)
 {
-  int count = 0 ;
-  for (int i = 0 ; i < size ; i++)
+  int *nuevo = (int *)realloc(NULL, (*newSize) * sizeof(int));
+  if (nuevo == NULL) exit(EXIT_FAILURE);
+
+  *newSize = 0;
+  for (int i = 0; i < size; i++)
     {
       if (arr[i] % 2 == 0)
       {
-        count++;
+        (*newSize)++;
+        nuevo[(*newSize) - 1] = arr[i];
       }
-
     }
-  *newSize = count;
-  if (count == 0)
-  {
-    return NULL;
-  }
+  return nuevo;
 }
+
 
 /*
 Ejercicio 4: Fusión de dos Arreglos Ordenados
